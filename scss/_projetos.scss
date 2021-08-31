@@ -1,0 +1,42 @@
+#projetos {
+  background-color: $preto;
+  color: $branco;
+  padding: 60px 0 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-family: $fonte-principal;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 180px;
+      border-bottom: 3px dashed $branco;
+      margin: 20px auto 30px auto;
+    }
+  }
+
+  a {
+    font-family: $fonte-secundaria;
+    padding: 10px 25px;
+    background-color: $branco;
+    border-radius: 50px;
+    color: $preto;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0 auto;
+
+    img {
+      margin: 0 0 2px 15px;
+    }
+  }
+}

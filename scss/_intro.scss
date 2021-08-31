@@ -1,0 +1,57 @@
+#first-sight {
+  width: 100%;
+  padding: 1rem 0;
+  background-color: $preto;
+  text-align: center;
+
+  p {
+    font-size: 1.5rem;
+    color: $branco;
+    font-family: $fonte-principal;
+  }
+}
+
+#intro {
+  height: calc(100vh - 59px);
+  width: 100%;
+  background: url(../img/intro-bg.jpg) no-repeat center;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+
+  h1 {
+    font-family: $fonte-principal;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 68px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+    max-width: 580px;
+    margin: 300px auto 0 auto;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 180px;
+      border-bottom: 3px dashed $branco;
+      margin: 40px auto 50px auto;
+    }
+  }
+
+  a {
+    font-family: $fonte-secundaria;
+    padding: 10px 25px;
+    background-color: $azul-escuro;
+    border-radius: 50px;
+    color: $branco;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+
+    img {
+      margin: 0 0 1px 15px;
+    }
+  }
+}
