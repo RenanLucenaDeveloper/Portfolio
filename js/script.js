@@ -1,3 +1,7 @@
+window.addEventListener('load', function () {
+  document.querySelector('body').classList.add("loaded")
+});
+
 new SimpleSlide({
   slide: 'principal',
   nav: true, // se deve ou não mostrar a navegação
