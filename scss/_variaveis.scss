@@ -11,3 +11,11 @@ $azul-escuro: #0A035F;
 $cinza-claro : #E4E4ED;
 $cinza-medio : #575760;
 $cinza-escuro : #818184;
+
+/* Mixins */
+
+@mixin mobile {
+  @media screen and (max-width:600px) {
+    @content;
+  }
+}

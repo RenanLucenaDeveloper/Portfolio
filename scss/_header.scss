@@ -11,6 +11,15 @@ header {
   z-index: 999;
   box-shadow: 5px 5px 25px 25px rgba(0,0,0,.05);
 
+  @include mobile {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: $branco;
+    width: 250px;
+    box-shadow: none;
+  }
+
   .logo {
     display: flex;
     align-items: center;
@@ -27,6 +36,10 @@ header {
     width: 300px;
     border-top: 2px dashed $preto;
     margin-bottom: 55px;
+
+    @include mobile {
+      width: 250px;
+    }
   }
 
   nav {

@@ -9,4 +9,8 @@ html {
   display: flex;
   flex-direction: column;
   width: calc(100vw - 315px);
+
+  @include mobile {
+    width: 100vw;
+  }
 }
