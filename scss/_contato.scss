@@ -21,7 +21,19 @@
         width: 425px;
         border-bottom: 2px dashed $cinza-claro;
         margin-top: 20px;
+
+        @include mobile {
+          max-width: 280px;
+        }
       }
+
+      @include mobile {
+        max-width: 300px;
+      }
+    }
+
+    @include mobile {
+      max-width: 340px;
     }
   }
 
@@ -41,6 +53,15 @@
       width: 180px;
       border-bottom: 3px dashed $preto;
       margin: 20px auto 60px auto;
+
+      @include mobile {
+        width: 125px;
+        margin: 10px auto 30px auto;
+      }
+    }
+
+    @include mobile {
+      font-size: 2.5rem;
     }
   }
 
@@ -48,22 +69,50 @@
     font-family: $fonte-principal;
     font-style: normal;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     text-align: left;
     color: #020206;
     margin-top: 20px;
     width: 480px;
+
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+
+    @include mobile {
+      max-width: 300px;
+    }
   }
 
   p {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     line-height: 28px;
     color: #575760;
     text-align: left;
     margin-top: 10px;
     width: 480px;
+
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+
+    @include mobile {
+      max-width: 300px;
+    }
   }
 }

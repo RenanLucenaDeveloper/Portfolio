@@ -8,6 +8,11 @@
     font-size: 1.5rem;
     color: $branco;
     font-family: $fonte-principal;
+
+
+  @include mobile {
+    font-size: 1.25rem;
+  }
   }
 }
 
@@ -53,7 +58,7 @@
       margin-top: 150px;
       max-width: 300px;
       font-size: 2.5rem;
-      line-height: 36px;
+      line-height: 37px;
 
       overflow-wrap: break-word;
       word-wrap: break-word;
