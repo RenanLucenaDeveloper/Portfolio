@@ -11,7 +11,10 @@
 
 
   @include mobile {
-    font-size: 1.25rem;
+    font-size: $p;
+    max-width: 300px;
+    margin: 0 auto;
+    font-weight: bold;
   }
   }
 }
@@ -26,7 +29,7 @@
 
   @include mobile {
     background: url(../img/intro-bg-mobile.jpg) no-repeat center;
-    height: 599px;
+    height: calc(100vh - 72px);
   }
 
   h1 {
@@ -41,6 +44,23 @@
     max-width: 580px;
     margin: 300px auto 0 auto;
 
+    @include mobile {
+      margin-top: 150px;
+      max-width: 300px;
+      font-size: $titulo;
+      line-height: 37px;
+
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      -ms-word-break: break-all;
+      word-break: break-all;
+      word-break: break-word;
+      -ms-hyphens: auto;
+      -moz-hyphens: auto;
+      -webkit-hyphens: auto;
+      hyphens: auto;
+    }
+
     &::after {
       content: "";
       display: block;
@@ -53,32 +73,14 @@
         margin: 30px auto 40px auto;
       }
     }
-
-    @include mobile {
-      margin-top: 150px;
-      max-width: 300px;
-      font-size: 2.5rem;
-      line-height: 37px;
-
-      overflow-wrap: break-word;
-      word-wrap: break-word;
-      -ms-word-break: break-all;
-      word-break: break-all;
-      word-break: break-word;
-      -ms-hyphens: auto;
-      -moz-hyphens: auto;
-      -webkit-hyphens: auto;
-      hyphens: auto;
-
-    }
   }
 
   a {
     font-family: $fonte-secundaria;
     padding: 10px 25px;
-    background-color: $azul-escuro;
+    background-color: $cinza-claro;
     border-radius: 50px;
-    color: $branco;
+    color: $preto;
     text-decoration: none;
     font-size: 24px;
     font-weight: 500;
@@ -88,11 +90,12 @@
 
       @include mobile {
         margin: 0 0 0 10px;
+        display: none;
       }
     }
 
   @include mobile {
-    font-size: 1.25rem;
+    font-size: $botao;
   }
   }
 }
