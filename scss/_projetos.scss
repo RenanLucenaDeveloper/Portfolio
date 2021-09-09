@@ -23,7 +23,7 @@
       margin: 20px auto 60px auto;
 
       @include mobile {
-        width: 150px;
+        width: 135px;
         margin: 20px auto 60px auto;
       }
     }
@@ -54,6 +54,7 @@
 
     @include mobile {
       font-size: 1.25rem;
+      margin-top: 40px;
     }
   }
 
@@ -102,6 +103,10 @@
     background: none;
     text-indent: -100px;
     overflow: hidden;
+
+    @include mobile {
+      margin: 0px 9px;
+    }
   }
   [data-slide-nav] > button.active {
     background: $branco;
