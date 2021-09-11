@@ -21,7 +21,7 @@ $cinza-escuro : #818184;
 /* Mixins */
 
 @mixin mobile {
-  @media screen and (max-width:600px) {
+  @media screen and (max-width:1250px) {
     @content;
   }
 }

@@ -29,6 +29,7 @@
 
   @include mobile {
     background: url(../img/intro-bg-mobile.jpg) no-repeat center;
+    background-size: cover;
     height: calc(100vh - 72px);
   }
 
@@ -97,5 +98,23 @@
   @include mobile {
     font-size: $botao;
   }
+  }
+
+  #scroll-holder {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 160px;
+    height: 5px;
+    background-color: $branco;
+    border-radius: 3px;
+    margin: 0 auto;
+
+    @include mobile {
+      bottom: 2rem;
+      width: 100px;
+      height: 4px;
+    }
   }
 }
